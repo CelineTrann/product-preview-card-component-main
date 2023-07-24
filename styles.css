@@ -2,6 +2,7 @@
 
 :root {
     --dark-cyan: hsl(158, 36%, 37%);
+    --darker-cyan: hsl(158, 37%, 25%);
     --cream: hsl(30, 38%, 92%);
 
     --dark-blue: hsl(212, 21%, 14%);
@@ -94,4 +95,9 @@ button {
 button img {
     vertical-align: middle;
     margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--darker-cyan);
+    cursor: pointer;
 }
