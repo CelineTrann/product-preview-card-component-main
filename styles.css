@@ -29,6 +29,7 @@ body {
 }
 
 main {
+    min-width: 600px;
     width: 40%;
     height: 50%;
     background-color: var(--white);
@@ -100,4 +101,29 @@ button img {
 button:hover {
     background-color: var(--darker-cyan);
     cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    main {
+        width: 90%;
+        height: 95%;
+        min-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .image {
+        background-image: url("/images/image-product-mobile.jpg");
+        background-size: cover;
+        height: 40%;
+    }
+
+    .text {
+        height: 60%;
+    }
 }
